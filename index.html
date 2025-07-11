@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FitPulse Pro - The ultimate smart fitness tracker for your health journey">
+    <meta name="keywords" content="fitness tracker, smart watch, health monitoring, workout">
+    <meta name="author" content="FitPulse">
+    <title>FitPulse Pro - Smart Fitness Tracker</title>
+    
+    <!-- Favicon start here -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌚</text></svg>">
+    
+    <!-- Google Fonts start here  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⌚</span>
+                <span class="logo-text">FitPulse Pro</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">
+                    Track Your Fitness Journey with 
+                    <span class="gradient-text">FitPulse Pro</span>
+                </h1>
+                <p class="hero-description animate-fade-in-delay">
+                    The ultimate smart fitness tracker that monitors your health 24/7, 
+                    tracks workouts, and helps you achieve your fitness goals with precision and style.
+                </p>
+                <div class="hero-buttons animate-fade-in-delay-2">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Watch Demo</button>
+                </div>
+                <div class="hero-stats animate-fade-in-delay-3">
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">App Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Workout Modes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image animate-slide-in">
+                <div class="watch-mockup">
+                    <div class="watch-screen">
+                        <div class="watch-face">
+                            <div class="time">14:30</div>
+                            <div class="stats-mini">
+                                <div class="stat-mini">
+                                    <span class="icon">❤️</span>
+                                    <span>72 BPM</span>
+                                </div>
+                                <div class="stat-mini">
+                                    <span class="icon">🔥</span>
+                                    <span>340 Cal</span>
+                                </div>
+                                <div class="stat-mini">
+                                    <span class="icon">👟</span>
+                                    <span>8,432</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-description">
+                    Discover what makes FitPulse Pro the perfect companion for your fitness journey .
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">❤️</div>
+                    <h3 class="feature-title">Heart Rate Monitoring</h3>
+                    <p class="feature-description">
+                        24/7 heart rate tracking with advanced sensors for accurate health insights .
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🏃‍♂️</div>
+                    <h3 class="feature-title">30+ Workout Modes</h3>
+                    <p class="feature-description">
+                        From running to yoga, track every type of workout with precision
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">💧</div>
+                    <h3 class="feature-title">Water Resistant</h3>
+                    <p class="feature-description">
+                        IP69 water resistance - perfect for swimming and all weather conditions .
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🔋</div>
+                    <h3 class="feature-title">7-Day Battery</h3>
+                    <p class="feature-description">
+                        Long-lasting battery life that keeps up with your active lifestyle .
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">😴</div>
+                    <h3 class="feature-title">Sleep Tracking</h3>
+                    <p class="feature-description">
+                        Advanced sleep analysis to help you optimize your rest and recovery .
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Smart Notifications</h3>
+                    <p class="feature-description">
+                        Stay connected with calls, messages, and app notifications on your wrist .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Users Say</h2>
+                <p class="section-description">
+                    Join thousands of satisfied customers who've transformed their fitness journey
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "FitPulse Pro has completely changed how I approach fitness. The heart rate monitoring is incredibly accurate, and I love the variety of workout modes!"
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩‍💼</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Swati Singh</h4>
+                            <p class="author-title">Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "As a professional athlete, I need precise tracking. FitPulse Pro delivers exceptional accuracy and the battery life is outstanding!"
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">🏃‍♂️</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Usain Bolt</h4>
+                            <p class="author-title">Professional Runner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "The sleep tracking feature has helped me understand my sleep patterns better. I'm sleeping better and feeling more energized!"
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍💻</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Sachin Goyal</h4>
+                            <p class="author-title">Software Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-description">
+                        Have questions about FitPulse Pro? We're here to help you on your fitness journey.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>ayushman1413@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+91 8887340368</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>East delhi, Delhi , 110092</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<form class="contact-form animate-on-scroll">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+    <div class="form-status"></div>
+</form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">⌚</span>
+                    <span class="logo-text">FitPulse Pro</span>
+                </div>
+                <p class="footer-text">
+                    Empowering your fitness journey with smart technology and precision tracking.
+                </p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitPulse Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("CxJGUxwe0g66GRkCI");
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
