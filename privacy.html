@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy Policy - FitPulse Pro</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+        .privacy-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+        }
+        .privacy-image {
+            flex: 1 1 300px;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-light);
+            animation: fadeInLeft 1s ease forwards;
+        }
+        .privacy-content {
+            flex: 2 1 400px;
+            animation: fadeInRight 1s ease forwards;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        ul li {
+            margin-bottom: 0.75rem;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -31,44 +58,49 @@
     </nav>
 
     <main class="section-padding container">
-        <h1 class="section-title">Privacy Policy</h1>
-        <p>Effective date: January 1, 2024</p>
-        <p>
-            FitPulse Pro ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
-        </p>
+        <h1 class="section-title animate-fade-in">Privacy Policy</h1>
+        <p class="animate-fade-in-delay">Effective date: January 1, 2024</p>
+        <div class="privacy-section">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Privacy protection" class="privacy-image" />
+            <div class="privacy-content">
+                <p>
+                    FitPulse Pro ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                </p>
 
-        <h2>Information We Collect</h2>
-        <ul>
-            <li>Personal Data: Name, email address, contact information, and other identifiers you provide.</li>
-            <li>Usage Data: Information about how you use our website and services.</li>
-            <li>Cookies and Tracking Technologies: We use cookies to enhance your experience.</li>
-        </ul>
+                <h2>Information We Collect</h2>
+                <ul>
+                    <li>Personal Data: Name, email address, contact information, and other identifiers you provide.</li>
+                    <li>Usage Data: Information about how you use our website and services.</li>
+                    <li>Cookies and Tracking Technologies: We use cookies to enhance your experience.</li>
+                </ul>
 
-        <h2>How We Use Your Information</h2>
-        <ul>
-            <li>To provide, operate, and maintain our services.</li>
-            <li>To communicate with you, including customer support.</li>
-            <li>To improve our website and services.</li>
-            <li>To comply with legal obligations.</li>
-        </ul>
+                <h2>How We Use Your Information</h2>
+                <ul>
+                    <li>To provide, operate, and maintain our services.</li>
+                    <li>To communicate with you, including customer support.</li>
+                    <li>To improve our website and services.</li>
+                    <li>To comply with legal obligations.</li>
+                </ul>
 
-        <h2>Sharing Your Information</h2>
-        <p>We do not sell your personal information. We may share information with trusted third parties to help us operate our services.</p>
+                <h2>Sharing Your Information</h2>
+                <p>We do not sell your personal information. We may share information with trusted third parties to help us operate our services.</p>
 
-        <h2>Your Choices</h2>
-        <p>You can opt out of receiving marketing communications and manage your cookie preferences.</p>
+                <h2>Your Choices</h2>
+                <p>You can opt out of receiving marketing communications and manage your cookie preferences.</p>
 
-        <h2>Security</h2>
-        <p>We implement reasonable security measures to protect your information.</p>
+                <h2>Security</h2>
+                <p>We implement reasonable security measures to protect your information.</p>
 
-        <h2>Children's Privacy</h2>
-        <p>Our services are not directed to children under 13 years of age.</p>
+                <h2>Children's Privacy</h2>
+                <p>Our services are not directed to children under 13 years of age.</p>
 
-        <h2>Changes to This Privacy Policy</h2>
-        <p>We may update this policy from time to time. We encourage you to review it periodically.</p>
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update this policy from time to time. We encourage you to review it periodically.</p>
 
-        <h2>Contact Us</h2>
-        <p>If you have questions about this Privacy Policy, please contact us at ayushman1413@gmail.com.</p>
+                <h2>Contact Us</h2>
+                <p>If you have questions about this Privacy Policy, please contact us at ayushman1413@gmail.com.</p>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
