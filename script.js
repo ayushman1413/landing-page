@@ -125,8 +125,10 @@ class SmoothScrolling {
 class ContactForm {
     constructor() {
         this.form = document.querySelector('.contact-form');
-        this.formStatus = this.form.querySelector('.form-status');
-        this.init();
+        if (this.form) {
+            this.formStatus = this.form.querySelector('.form-status');
+            this.init();
+        }
     }
     
     init() {
@@ -287,7 +289,50 @@ document.addEventListener('DOMContentLoaded', () => {
     new WatchFaceAnimation();
     new ParallaxEffect();
     new KeyboardNavigation();
-    
+
+    // Get Started button scroll to #features
+    const getStartedBtn = document.querySelector('.hero-buttons .btn-primary');
+    if (getStartedBtn) {
+        getStartedBtn.addEventListener('click', () => {
+            const featuresSection = document.getElementById('features');
+            if (featuresSection) {
+                featuresSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
+    // Watch Demo button open modal
+    const watchDemoBtn = document.querySelector('.hero-buttons .btn-secondary');
+    const demoModal = document.getElementById('demoModal');
+    const modalCloseBtn = document.getElementById('modalClose');
+
+    if (watchDemoBtn && demoModal && modalCloseBtn) {
+        watchDemoBtn.addEventListener('click', () => {
+            demoModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden'; // prevent background scroll
+        });
+
+        modalCloseBtn.addEventListener('click', () => {
+            demoModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        });
+
+        demoModal.addEventListener('click', (e) => {
+            if (e.target === demoModal) {
+                demoModal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && demoModal.getAttribute('aria-hidden') === 'false') {
+                demoModal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
     document.body.classList.add('loaded');
 });
 
