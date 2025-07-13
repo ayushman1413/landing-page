@@ -290,7 +290,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new ParallaxEffect();
     new KeyboardNavigation();
 
-    // Get Started button scroll to #features
     const getStartedBtn = document.querySelector('.hero-buttons .btn-primary');
     if (getStartedBtn) {
         getStartedBtn.addEventListener('click', () => {
@@ -301,7 +300,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Watch Demo button open modal
     const watchDemoBtn = document.querySelector('.hero-buttons .btn-secondary');
     const demoModal = document.getElementById('demoModal');
     const modalCloseBtn = document.getElementById('modalClose');
@@ -309,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (watchDemoBtn && demoModal && modalCloseBtn) {
         watchDemoBtn.addEventListener('click', () => {
             demoModal.setAttribute('aria-hidden', 'false');
-            document.body.style.overflow = 'hidden'; // prevent background scroll
+            document.body.style.overflow = 'hidden'; 
         });
 
         modalCloseBtn.addEventListener('click', () => {
@@ -324,7 +322,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Close modal on Escape key
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && demoModal.getAttribute('aria-hidden') === 'false') {
                 demoModal.setAttribute('aria-hidden', 'true');
