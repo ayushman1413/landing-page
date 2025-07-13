@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Terms of Service - FitPulse Pro</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
+        <style>
         .terms-section {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            align-items: flex-start;
+            align-items: start;
             margin-bottom: 3rem;
         }
         .terms-image {
-            flex: 1 1 300px;
-            max-width: 400px;
+            width: 100%;
+            max-width: 350px;
             border-radius: 12px;
             box-shadow: var(--shadow-light);
             animation: fadeInLeft 1s ease forwards;
+            justify-self: center;
         }
         .terms-content {
-            flex: 2 1 400px;
+            grid-column: span 2;
             animation: fadeInRight 1s ease forwards;
         }
     </style>
@@ -55,8 +56,8 @@
         <p class="animate-fade-in-delay">Effective date: January 1, 2024</p>
         <div class="terms-section">
             <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=400&q=80" alt="Terms of service" class="terms-image" />
-            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Privacy and Security" class="terms-image" />
-            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80" alt="Account Responsibility" class="terms-image" />
+           
+            <!-- <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80" alt="Account Responsibility" class="terms-image" /> -->
             <div class="terms-content">
                 <p>
                     Welcome to FitPulse Pro. These Terms of Service ("Terms") govern your use of our website and services. By accessing or using our services, you agree to be bound by these Terms.
@@ -79,7 +80,9 @@
 
                 <h2>Contact Us</h2>
                 <p>If you have questions about these Terms, please contact us at ayushman1413@gmail.com.</p>
+                 
             </div>
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Privacy and Security" class="terms-image" />
         </div>
     </main>
 
